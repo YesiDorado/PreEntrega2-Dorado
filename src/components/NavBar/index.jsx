@@ -10,10 +10,10 @@ export const NavBar = () => {
                 </div>
                 <ul className="nav__list">
                     <li>
-                        <a className="nav__link" href="#">Base</a>
+                        <a className="nav__link" href="#">Nosotros</a>
                     </li>
                     <li>
-                        <a className="nav__link" href="#">Labial</a>
+                        <a className="nav__link" href="#">Productos</a>
                     </li>
                     <li>
                         <a className="nav__link" href="#">< CartWidget /></a>
