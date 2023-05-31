@@ -1,13 +1,22 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar/index";
+import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
-import NavBar from './components/NavBar';
+
 
 function App() {
   return (
-    <>
-    <NavBar />
-    <ItemListContainer texto="Sombra de ojos" />
-    </>
+      <div className='App'>
+        <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route patch='/' element={<ItemListContainer />} />
+          <Route patch='/shopp/:shoppId' element={<ItemDetailContainer />} />
+          <Route patch='*' element={<h1>404 NOT FOUND</h1>} />
+        </Routes>
+        </BrowserRouter>
+      </div>
   );
 }
 

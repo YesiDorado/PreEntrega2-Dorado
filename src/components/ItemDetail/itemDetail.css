@@ -1,0 +1,41 @@
+.cardProducto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 90%;
+}
+
+.Producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 184, 160);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    line-height: 0.7;
+}
+
+.NameProduct {
+    color: rgb(167, 121, 5);
+}
+
+.ProductImg{
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0 , 0, 0.3);
+}
+
+.ItemQty{
+    margin-top: 20px;
+}
+
+.cost{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(242, 149, 36);
+}

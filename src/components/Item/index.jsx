@@ -1,11 +1,12 @@
-import "./item.css";
 import React from 'react';
+import "./item.css";
 
-const Item = () => {
-    return(
-        <a href='' className='makeUp'>
-            <img src='https://www.pngwing.com/es/free-png-bidbb'alt=''/>
-            <p>Labial</p>
+
+const Item = ({ info }) => {
+    return (
+        <a href='' className='mascotas'>
+            <img src={info.image} alt='' />
+            <p>{info.title}</p>
         </a>
     );
 }

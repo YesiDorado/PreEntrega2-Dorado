@@ -1,11 +1,11 @@
 import Item from "../Item";
-import React from "react";
+import "../ItemList/itemList.css";
 
-const ItemList = () => {
-
-    return (
-        <Item />
-    );
+export default function ItemList ({Shop}) {
+    return(
+        <div className="ListaShop">
+            <LayOut title="Bienvenidos">{Shop.map(sho=> <Item key={sho.id} {...sho} />)}
+            </LayOut>
+        </div>
+    )
 }
-
-export default ItemList;
