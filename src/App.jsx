@@ -12,7 +12,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route patch='/' element={<ItemListContainer />} />
-          <Route patch='/shopp/:shoppId' element={<ItemDetailContainer />} />
+          <Route patch='/shopp/:shoppId' element={<ItemListContainer />} />
+          <Route patch='/Item/:itemId' element={<ItemDetailContainer />} />
           <Route patch='*' element={<h1>404 NOT FOUND</h1>} />
         </Routes>
         </BrowserRouter>

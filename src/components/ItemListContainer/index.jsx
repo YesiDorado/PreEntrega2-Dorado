@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 export default function ItemListContainer ({ greeting }) {
     const [shop, setShop] = useState([]);
-    const { shoppId } = useParams()
+    const { shoppId } = useParams();
 
     useEffect(() => {
         const asyncFunc = shoppId ? shoppId : getShop

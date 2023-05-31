@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getShoppingById } from "../../data/shop";
 import ItemDetail from "../ItemDetail/index";
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 
 
 export default function ItemDetailContainer() {
