@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { getShoppingById } from "../../data/shop";
+import { getShoppingById } from "../../data/shop.js";
 import ItemDetail from "../ItemDetail/index";
 import { useParams } from "react-router-dom";
+
 
 
 export default function ItemDetailContainer() {
@@ -10,8 +11,8 @@ export default function ItemDetailContainer() {
 
     useEffect(() => {
         getShoppingById(parseInt(ItemId))
-            .then(Response => {
-                setShop(Response)
+            .then(response => {
+                setShop(response)
             })
             .catch(error => {
                 console.error(error)

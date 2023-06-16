@@ -1,4 +1,43 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+#root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  
+  
+  .foto img {
+    width: 250px;
+    height: 150px;
+    border-radius: 20px; 
+    }
+  
+  
+  .colorletra{
+    color: rgb(216, 149, 41);
+    text-decoration:overline;
+  }
+  
+  
+  body {
+    background-color: lightgoldenrodyellow; 
+    }

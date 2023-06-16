@@ -3,7 +3,7 @@ const Shop = [
         "id": 1,
         "nombre": "Bolsa Proplan",
         "precioProducto": "$10.000",
-        "imagen": "/src/assets/bolsaproplan.jpg",
+        "imagen": '/src/assets/bolsaproplan.jpg',
         "stock": 5
     },
     {
@@ -31,7 +31,7 @@ const Shop = [
         "id": 5,
         "nombre": "Rascador para Gatos",
         "precioProducto": "$20.000",
-        "imagen": "/src/assets/rascador.jpg",
+        "imagen": "/src/assets/rascador.png",
         "stock": 2
     }
 ]

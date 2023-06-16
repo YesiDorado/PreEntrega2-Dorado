@@ -4,21 +4,21 @@ import { getShoppingById } from "../../data/shop";
 import ItemList from "../ItemList/index";
 import { useParams } from "react-router-dom";
 
-export default function ItemListContainer ({ greeting }) {
+
+export default function ItemListContainer({ greeting }) {
     const [shop, setShop] = useState([]);
-    const { shoppId } = useParams();
+    const { shoppId } = useParams()
 
     useEffect(() => {
-        const asyncFunc = shoppId ? shoppId : getShop
+        const asyncFunc = shoppId ? getShoppingById : getShop
 
         asyncFunc(shoppId)
-        .then(response =>{
-            setShop(response)
-        })
-        .catch(error => {
-            console.error(error)
-        })
-        
+            .then(response => {
+                setShop(response)
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }, [shoppId])
 
     return (

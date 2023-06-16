@@ -1,9 +1,12 @@
 import React from "react";
+import "./CartWidget.css";
+import cart from './assets/Carrito.svg';
 
-export const CartWidget = () => {
+export default function CartWidget () {
     return (
-        <i className="bi bi-cart"></i>
+        <div className="cart-widget">
+            <img src={cart} alt="carrito" />
+            <li>0</li>
+        </div>
     );
 }
-
-export default CartWidget;

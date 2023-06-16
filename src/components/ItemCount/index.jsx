@@ -1,6 +1,7 @@
 import React from "react";
 import "./ItemCount.css";
 import { useState } from "react";
+import LayOut from "../LayOut/index";
 
 export default function ItemCount({ initial, stock, onAdd }) {
 

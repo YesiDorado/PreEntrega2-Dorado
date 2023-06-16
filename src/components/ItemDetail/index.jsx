@@ -2,7 +2,8 @@ import React from "react";
 import "./itemDetail.css";
 import ItemCount from "../ItemCount/index";
 
-export default function ItemDetail ({ id, nombre, imagen, precioProducto, stock }) {
+export default function ItemDetail ({ nombre, imagen, precioProducto, stock }) {
+
     return(
         <div className="cardProducto">
             <div className="Producto">
