@@ -3,7 +3,7 @@ const Shop = [
         "id": 1,
         "nombre": "Bolsa Proplan",
         "precioProducto": "$10.000",
-        "imagen": '/src/assets/bolsaproplan.jpg',
+        "imagen": "/src/assets/bolsaproplan.jpg",
         "stock": 5
     },
     {
