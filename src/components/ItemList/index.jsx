@@ -10,3 +10,5 @@ export default function ItemList ({Shop}) {
         </div>
     );
 }
+
+// En REACT hay que poner un "KEY" cuando utilizamos MAP
